@@ -45,6 +45,68 @@
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <!-- Sex -->
+                    <div class="form-group">
+                        <label>Sex</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="sex" value="Male" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="Female" required> Female
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="Other" required> Other
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <div class="dob-group">
+                            <select id="dob-day" name="dob-day" required>
+                                <option value="" disabled selected>Day</option>
+                                ${Array.from({length: 31}, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join('')}
+                            </select>
+                            <select id="dob-month" name="dob-month" required>
+                                <option value="" disabled selected>Month</option>
+                                ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                                    .map((month, i) => `<option value="${i + 1}">${month}</option>`).join('')}
+                            </select>
+                            <select id="dob-year" name="dob-year" required>
+                                <option value="" disabled selected>Year</option>
+                                ${Array.from({length: 100}, (_, i) => `<option value="${new Date().getFullYear() - i}">${new Date().getFullYear() - i}</option>`).join('')}
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Languages Known -->
+                    <div class="form-group">
+                        <label>Languages Known</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="languages" value="English"> English
+                            </label>
+                            <label>
+                                <input type="checkbox" name="languages" value="Telugu"> Telugu
+                            </label>
+                            <label>
+                                <input type="checkbox" name="languages" value="Hindi"> Hindi
+                            </label>
+                            <label>
+                                <input type="checkbox" name="languages" value="Tamil"> Tamil
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Address -->
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
                     <button type="submit" class="btn-primary">Register</button>
                     <p class="form-footer">
                         Already have an account? <a href="login.html">Login here</a>
