@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - University Bookstore</title>
+    <!-- <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/forms.css"> -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-frame">
+            <div class="logo-section">
+                <img src="../images/logo.svg" alt="Bookstore Logo" class="logo">
+                <h1>University Bookstore</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <main class="form-container">
+                <form class="auth-form">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="username" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <p class="form-footer">
+                        Don't have an account? <a href="register.html">Register here</a>
+                    </p>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

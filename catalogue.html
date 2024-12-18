@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - University Bookstore</title>
+    <link rel="stylesheet" href="catalogue.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-frame">
+            <div class="logo-section">
+                <img src="../images/logo.svg" alt="Bookstore Logo" class="logo">
+                <h1>University Bookstore</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="catalogue.html" class="active">Catalogue</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="left-frame">
+                <nav class="category-nav">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#" data-category="cse" class="active">CSE Books</a></li>
+                        <li><a href="#" data-category="ece">ECE Books</a></li>
+                        <li><a href="#" data-category="mech">Mechanical Books</a></li>
+                        <li><a href="#" data-category="civil">Civil Books</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="right-frame">
+                <div class="catalogue-header">
+                    <h2>CSE Books</h2>
+                    <div class="filters">
+                        <select name="sort" id="sort">
+                            <option value="popular">Most Popular</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="book-grid">
+                    <!-- Book 1 -->
+                    <div class="book-card">
+                        <img src="https://m.media-amazon.com/images/I/71-XlTSt+pL._UF1000,1000_QL80_.jpg" alt="Data Structures" class="book-cover">
+                        <div class="book-info">
+                            <h3>Data Structures and Algorithms</h3>
+                            <p class="author">By John Smith</p>
+                            <p class="price">$49.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-card">
+                        <img src="https://images.booksense.com/images/305/046/9780262046305.jpg" alt="Introduction to Algorithms" class="book-cover">
+                        <div class="book-info">
+                            <h3>Introduction to Algorithms</h3>
+                            <p class="author">By Thomas H. Cormen</p>
+                            <p class="price">$59.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-card">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/k70spzk0/book/2/7/0/operating-system-concepts-international-student-version-original-imafpchnqbhpcuhg.jpeg?q=20&crop=false" alt="Operating System Concepts" class="book-cover">
+                        <div class="book-info">
+                            <h3>Operating System Concepts</h3>
+                            <p class="author">By Abraham Silberschatz</p>
+                            <p class="price">$39.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-card">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/kjbr8280-0/book/3/0/o/computer-networks-original-imafyx6rawjdugyg.jpeg?q=20&crop=false" alt="Computer Networks" class="book-cover">
+                        <div class="book-info">
+                            <h3>Computer Networks</h3>
+                            <p class="author">By Andrew S. Tanenbaum</p>
+                            <p class="price">$79.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-card">
+                        <img src="https://bpbonline.com/cdn/shop/products/9789388176620.jpg?v=1671694030" alt="Database Management Systems" class="book-cover">
+                        <div class="book-info">
+                            <h3>Database Management Systems</h3>
+                            <p class="author">By Raghu Ramakrishnan</p>
+                            <p class="price">$69.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Book 6 -->
+                    <div class="book-card">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/l33cia80/book/k/x/c/the-art-of-artificial-intelligence-original-imageasjnnqt7ajd.jpeg?q=20&crop=false" alt="Artificial Intelligence" class="book-cover">
+                        <div class="book-info">
+                            <h3>Artificial Intelligence</h3>
+                            <p class="author">By Stuart Russell, Peter Norvig</p>
+                            <p class="price">$89.99</p>
+                            <button class="btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
